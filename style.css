@@ -165,11 +165,42 @@ main section {
 }
 /* Feature Style End */
 
+/* Fact Style */
+.card-container {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .card {
+  padding: 1rem 0.8rem;
+  border: 2px solid #ff900e;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card-container .card-icon {
+  width: 28px;
+}
+.card-container .number {
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card-container .card-title {
+  color: rgb(114, 114, 114);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+/* Fact Style End */
+
 /* Responsive Design */
 @media screen and (max-width: 576px) {
   .nabvar,
   .team,
-  .feature {
+  .feature,
+  .card-container {
     flex-direction: column;
     gap: 1rem;
   }
@@ -186,13 +217,16 @@ main section {
     margin-left: 2rem;
     padding: 10px;
   }
+  .fact{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .team {
     flex-direction: column;
     gap: 20px;
   }
-  .feature{
+  .feature {
     flex-direction: column;
     align-items: center;
     justify-content: center;
