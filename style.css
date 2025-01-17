@@ -195,6 +195,22 @@ main section {
 }
 /* Fact Style End */
 
+/* Sponsor Section Style */
+.sponsor{
+  text-align: center;
+}
+.sponsor .sponsor-container{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.sponsor .sponsor-container img{
+  filter: grayscale(100%);
+  width: 106px;
+}
+/* Sponsor Section Style End */
 /* Responsive Design */
 @media screen and (max-width: 576px) {
   .nabvar,
@@ -217,7 +233,7 @@ main section {
     margin-left: 2rem;
     padding: 10px;
   }
-  .fact{
+  .fact {
     text-align: center;
   }
 }
