@@ -40,14 +40,14 @@ body {
 .btn:hover {
   background: #d78221;
 }
-main{
+main {
   max-width: 920px;
   margin: 0 auto;
 }
-main section{
+main section {
   margin-top: 100px;
 }
-.section-title{
+.section-title {
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -103,45 +103,98 @@ main section{
 /* Header Style End */
 
 /* Team Section Style */
-.team{
+.team {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.team .image-container{
+.team .image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
-.team .section-title .gray{
+.team .section-title .gray {
   color: #727272;
   font-weight: 500;
 }
-.team .section-title .orange{
+.team .section-title .orange {
   color: #ff900e;
 }
-.team .image-container img{
+.team .image-container img {
   max-width: 218px;
 }
-.team-project-feature{
+.team-project-feature {
   max-width: 345px;
   margin-left: 30px;
 }
 /* End Team Section Style */
-/* Responsive Design */
-@media screen and (max-width:576px) {
-    .nabvar,
-    .team{
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .team .image-container img{
-      width: 100%;
-    }
+
+/* Feature Section Style */
+.feature {
+  display: flex;
+  gap: 5.5rem;
 }
-@media screen and (min-width:576px) and (max-width:992px) {
-  .team{
+.our-features {
+  max-width: 375px;
+}
+.feature .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 0.8rem;
+}
+.feature-box {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.2rem;
+  margin: 0.8rem 0;
+}
+.feature-box h4 {
+  color: rgb(19, 19, 19);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.feature-image-container img {
+  max-width: 453px;
+}
+.feature .btn .text-big {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.feature .btn {
+  margin-top: -4.5rem;
+  margin-left: -3rem;
+  padding: 28px 25px;
+}
+/* Feature Style End */
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+  .nabvar,
+  .team,
+  .feature {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .feature {
+    align-items: center;
+    justify-content: center;
+  }
+  .team .image-container img,
+  .feature-image-container img {
+    width: 100%;
+  }
+  .feature .btn {
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .team {
     flex-direction: column;
     gap: 20px;
+  }
+  .feature{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
